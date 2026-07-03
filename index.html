@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4개 랜딩 비교 — 어디에 설득되나요?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gothic+A1:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  :root{ --bg:#111112; --card:#1a1a1c; --ink:#f0efe9; --mut:#98958c; --line:#2c2c2f; }
+  body{ background:var(--bg); color:var(--ink); font-family:'Gothic A1',sans-serif; font-weight:300; line-height:1.7; -webkit-font-smoothing:antialiased; min-height:100vh; }
+  .serif{ font-family:'Gowun Batang',serif; }
+  .wrap{ max-width:1080px; margin:0 auto; padding:64px 28px 80px; }
+  .head{ text-align:center; margin-bottom:56px; }
+  .kick{ letter-spacing:.24em; font-size:12px; color:var(--mut); text-transform:uppercase; }
+  h1{ font-family:'Gowun Batang'; font-weight:700; font-size:clamp(30px,5vw,50px); line-height:1.3; margin:18px 0 16px; }
+  .head p{ color:var(--mut); max-width:560px; margin:0 auto; font-size:17px; }
+  .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px; }
+  .card{ background:var(--card); border:1px solid var(--line); border-radius:20px; overflow:hidden; display:flex; flex-direction:column; text-decoration:none; color:inherit; transition:border-color .2s, transform .2s; }
+  .card:hover{ border-color:var(--accent); transform:translateY(-4px); }
+  .swatch{ height:120px; display:flex; align-items:flex-end; padding:20px; position:relative; }
+  .swatch .tag{ position:absolute; top:16px; right:16px; font-size:12px; font-weight:700; letter-spacing:.1em; padding:5px 12px; border-radius:999px; }
+  .swatch .id{ font-family:'Gowun Batang'; font-size:15px; letter-spacing:.2em; opacity:.9; }
+  .body{ padding:24px; flex:1; display:flex; flex-direction:column; }
+  .body h2{ font-family:'Gowun Batang'; font-weight:700; font-size:22px; margin-bottom:8px; }
+  .body .who{ font-size:13px; color:var(--mut); margin-bottom:12px; }
+  .body .sell{ font-size:14px; color:#c8c5bc; flex:1; }
+  .body .price{ margin-top:16px; font-size:14px; color:var(--mut); }
+  .body .price b{ color:var(--ink); font-weight:500; }
+  .go{ margin-top:16px; font-size:14px; font-weight:500; display:inline-flex; align-items:center; gap:6px; color:var(--accent); }
+  /* accents */
+  .c1{ --accent:#e9ab6f; } .c1 .swatch{ background:#0c0c15; } .c1 .swatch .id,.c1 .go{ color:#e9ab6f; } .c1 .tag{ background:#e9ab6f; color:#1a1206; }
+  .c2{ --accent:#5f8168; } .c2 .swatch{ background:#f6f2ea; } .c2 .swatch .id{ color:#3f5a46; } .c2 .go{ color:#7fa588; } .c2 .tag{ background:#5f8168; color:#fff; }
+  .c3{ --accent:#b08a4e; } .c3 .swatch{ background:#faf7f1; } .c3 .swatch .id{ color:#8a6a35; } .c3 .go{ color:#c9a765; } .c3 .tag{ background:#b08a4e; color:#fff; }
+  .c4{ --accent:#bc9a54; } .c4 .swatch{ background:#1d3a30; } .c4 .swatch .id{ color:#bc9a54; } .c4 .go{ color:#bc9a54; } .c4 .tag{ background:#bc9a54; color:#1a1508; }
+  .note{ margin-top:56px; border-top:1px solid var(--line); padding-top:32px; color:var(--mut); font-size:14px; }
+  .note b{ color:var(--ink); font-weight:500; }
+  .ask{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin-top:20px; }
+  .ask div{ background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 18px; font-size:14px; }
+  .ask div b{ color:var(--ink); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <p class="kick">컨셉 검증 · A/B/C/D 셀프 테스트</p>
+    <h1 class="serif">어디에 설득되나요?</h1>
+    <p>같은 뿌리에서 나온 4개의 방향. 각각 가장 강한 셀링포인트로 무장했습니다. 하나씩 열어보고, 지갑이 열리는 걸 느껴보세요.</p>
+  </div>
+
+  <div class="grid">
+    <a class="card c1" href="1-jaehoe.html">
+      <div class="swatch"><span class="tag">재회</span><span class="id">01 · 감성 · 야간</span></div>
+      <div class="body">
+        <h2>다시, 우리</h2>
+        <p class="who">이별 후 · 미련이 강한 사람</p>
+        <p class="sell">“그 사람은 지금 날 생각할까.” 매달리지 않고 상대 마음·재회 확률을 확인. 심리 × 사주, 완전 익명.</p>
+        <p class="price"><b>39,000원</b> · 즉시 리포트</p>
+        <span class="go">열어보기 →</span>
+      </div>
+    </a>
+
+    <a class="card c2" href="2-couple-report.html">
+      <div class="swatch"><span class="tag">셀프서브</span><span class="id">02 · 밝고 · 따뜻</span></div>
+      <div class="body">
+        <h2>미리, 우리</h2>
+        <p class="who">결혼 결심 무렵 커플 · 여성 주도</p>
+        <p class="sell">동거 없이 결혼 후를 미리. “검증”이 아니라 “궁합 재미”. 문제만이 아니라 처방까지 담은 20~30장.</p>
+        <p class="price"><b>39,000원</b> / 2인 · 무료 미리보기</p>
+        <span class="go">열어보기 →</span>
+      </div>
+    </a>
+
+    <a class="card c3" href="3-wedding-bundle.html">
+      <div class="swatch"><span class="tag">웨딩번들</span><span class="id">03 · 웨딩 · 골드</span></div>
+      <div class="body">
+        <h2>웨딩·체크 특전</h2>
+        <p class="who">스드메 예약 커플 (유통 관점)</p>
+        <p class="sell">“스드메 예약하면 결혼생활 진단 무료.” 2,101만원 결혼 준비의 마지막 퍼즐. 플래너 신뢰 + 부담 0.</p>
+        <p class="price"><b>무료 포함</b> · 제휴 수익 모델</p>
+        <span class="go">열어보기 →</span>
+      </div>
+    </a>
+
+    <a class="card c4" href="4-weddingcheck-premium.html">
+      <div class="swatch"><span class="tag">상담사 피봇</span><span class="id">04 · 프리미엄 · 신뢰</span></div>
+      <div class="body">
+        <h2>웨딩체크</h2>
+        <p class="who">확신 50~70% · 애정 높은 좁은 밴드</p>
+        <p class="sell">“헤어지긴 아깝고 확신은 아직인 당신에게.” 전문가 1:1 60분, 대면/화상. 자동 리포트가 아닌 사람이 대화로.</p>
+        <p class="price"><b>15만원</b> / 커플 · 예약제</p>
+        <span class="go">열어보기 →</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="note">
+    <p><b>테스트하는 법:</b> 4개를 순서대로 열어보고, 각각에서 “지금 결제 버튼을 누를 마음이 드는가”를 스스로 관찰해보세요. 어떤 카피에 마음이 움직였는지, 어디서 “이건 나 아니다” 싶었는지가 곧 데이터예요.</p>
+    <div class="ask">
+      <div><b>01 재회</b> — 절박함에 반응? 사주 결합이 매력? 익명성이 결정타?</div>
+      <div><b>02 셀프서브</b> — 건강검진 비유가 와닿나? “남친 부담↓” 프레이밍이 통하나?</div>
+      <div><b>03 웨딩번들</b> — “무료”가 진입 욕구를 만드나? 오히려 가벼워 보이나?</div>
+      <div><b>04 상담사</b> — 전문가 신뢰가 15만원을 정당화하나? 좁은 밴드 카피가 “내 얘기” 같나?</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
